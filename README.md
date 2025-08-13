@@ -1,29 +1,40 @@
 # my-adk-quickstart
 
-このプロジェクトは Google ADK (Agent Development Kit) を使用したマルチツールエージェントのクイックスタートです。
+This project is a quickstart for a multi-tool agent using Google ADK (Agent Development Kit).
 
 ## Getting started
 
-### 1. 仮想環境の作成とアクティベート
+### Create and activate a virtual environment
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 ```
 
-### 2. Google ADK のインストール
+### Install Google ADK
+
 ```bash
 pip install google-adk
 ```
 
-### 3. エージェントディレクトリとファイルの作成
+### Create the .env file
+
 ```bash
-mkdir multi_tool_agent/
-echo "from . import agent" > multi_tool_agent/__init__.py
-touch multi_tool_agent/agent.py
 touch multi_tool_agent/.env
 ```
 
-### 4. エージェントの実行
+### Run the agent locally
+
+- Terminal
+
 ```bash
+# root directory
 adk run multi_tool_agent
+```
+
+- Dev UI
+
+```bash
+# root directory
+adk web
 ```
